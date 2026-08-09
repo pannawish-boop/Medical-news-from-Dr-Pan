@@ -1,0 +1,6 @@
+{
+  "name": "Doctor PAN Rehab Clinic - Medical News",
+  "description": "Medical news and evidence-based articles on ASD, ADHD, LD, TICS, and TMS by Doctor PAN Rehab Clinic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

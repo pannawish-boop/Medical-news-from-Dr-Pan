@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@media print {
+  /* Hide standard app UI when printing main window */
+  body > *:not(#printable-article-container) {
+    display: none !important;
+  }
+
+  #printable-article-container {
+    display: block !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 15mm !important;
+    background: white !important;
+    color: #0f172a !important;
+    font-family: 'Sarabun', 'Sukhumvit Set', system-ui, -apple-system, sans-serif !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}
