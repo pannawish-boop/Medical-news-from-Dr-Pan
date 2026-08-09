@@ -8,7 +8,7 @@
     "build": "vite build && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
     "start": "node dist/server.cjs",
     "preview": "vite preview",
-    "clean": "rm -rf dist server.cjs",
+    "clean": "node -e \"const fs = require('fs'); const path = require('path'); const dirs = ['dist']; dirs.forEach(d => { const p = path.join(process.cwd(), d); if (fs.existsSync(p)) fs.rmSync(p, { recursive: true, force: true }); });\" && del-cli server.cjs --quiet",
     "lint": "tsc --noEmit"
   },
   "dependencies": {
